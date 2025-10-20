@@ -9,5 +9,12 @@ package Vista;
  * @author hugo_ale.chavarro
  */
 public class Vista {
-    
+
+    public void mostrarMensaje(String mensaje) {
+        System.out.println(mensaje);
+    }
+
+    public void mostrarSeparador() {
+        System.out.println("\n============================================\n");
+    }
 }
