@@ -8,6 +8,20 @@ package Modelo;
  *
  * @author hugo_ale.chavarro
  */
-public class Persona {
-    
+public abstract class Persona {
+    protected String nombre;
+    protected String direccion;
+    protected String telefono;
+    protected Fecha fechaNacimiento;
+
+    public Persona(String nombre, String direccion, String telefono, Fecha fechaNacimiento) {
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.telefono = telefono;
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
 }
