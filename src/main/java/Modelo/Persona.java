@@ -24,4 +24,14 @@ public abstract class Persona {
     public String getNombre() {
         return nombre;
     }
+    
+    public abstract String obtenerRol();
+
+    @Override
+    public String toString() {
+        return "Nombre: " + nombre + "\n" +
+               "Dirección: " + direccion + "\n" +
+               "Teléfono: " + telefono + "\n" +
+               "Fecha de Nacimiento: " + fechaNacimiento.toString();
+    }
 }
